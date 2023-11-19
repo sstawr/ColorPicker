@@ -46,6 +46,10 @@
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TcG-Z0-OcR">
                                         <rect key="frame" x="121" y="0.0" width="242" height="31"/>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <connections>
+                                            <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="lMM-WG-t8c"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
@@ -72,6 +76,10 @@
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Stg-7u-s2z">
                                         <rect key="frame" x="121" y="0.0" width="242" height="31"/>
+                                        <color key="tintColor" systemColor="systemGreenColor"/>
+                                        <connections>
+                                            <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="lCo-AE-z9L"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
@@ -97,7 +105,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="nEk-8v-eAJ">
-                                        <rect key="frame" x="121" y="0.0" width="242" height="31"/>
+                                        <rect key="frame" x="121" y="-1" width="242" height="31"/>
+                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                        <connections>
+                                            <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="BbM-aV-9Ec"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
@@ -122,7 +134,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="blueSlider" destination="nEk-8v-eAJ" id="owm-FL-CgU"/>
+                        <outlet property="blueValueLabel" destination="7aI-rs-ymu" id="QGU-X9-72r"/>
                         <outlet property="colorPanelView" destination="dBd-lJ-7ZP" id="wDt-dV-r5e"/>
+                        <outlet property="greenSlider" destination="Stg-7u-s2z" id="Lvm-5E-cSh"/>
+                        <outlet property="greenValueLabel" destination="Fhh-3i-Ewx" id="QcL-W2-CWc"/>
+                        <outlet property="redSlider" destination="TcG-Z0-OcR" id="86m-Zu-l2y"/>
+                        <outlet property="redValueLabel" destination="DxX-Pi-yd2" id="dPm-Fq-0Wh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -136,6 +154,15 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
