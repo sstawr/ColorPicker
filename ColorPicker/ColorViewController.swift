@@ -11,12 +11,7 @@ protocol SettingsViewControllerDelegate: AnyObject {
     func setColor(_ color: UIColor)
 }
 
-final class ColorViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
+final class ColorViewController: UIViewController {    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let settingsVC = segue.destination as? SettingsViewController
         settingsVC?.viewColor = super.view.backgroundColor
