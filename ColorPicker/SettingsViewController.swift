@@ -27,6 +27,8 @@ final class SettingsViewController: UIViewController {
         
         colorPanelView.backgroundColor = viewColor
         
+        setColorToSliders()
+        
         redValueLabel.text = string(from: redSlider)
         greenValueLabel.text = string(from: greenSlider)
         blueValueLabel.text = string(from: blueSlider)
@@ -58,6 +60,16 @@ final class SettingsViewController: UIViewController {
     
     private func string(from slider: UISlider) -> String {
         String(format: "%.2f", slider.value)
+    }
+    
+    private func setColorToSliders() {
+        let redValue = colorPanelView.backgroundColor?.cgColor.components?[0] ?? 0
+        let greenValue = colorPanelView.backgroundColor?.cgColor.components?[1] ?? 0
+        let blueValue = colorPanelView.backgroundColor?.cgColor.components?[2] ?? 0
+        
+        redSlider.value = Float(CGFloat(redValue))
+        greenSlider.value = Float(CGFloat(greenValue))
+        blueSlider.value = Float(CGFloat(blueValue))
     }
 }
 
