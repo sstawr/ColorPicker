@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6A8ACDBB2B0A44B900EF2825 /* ColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8ACDBB2B0A44B900EF2825 /* ColorizedApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorizedApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8ACDBE2B0A44B900EF2825 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A8ACDC02B0A44B900EF2825 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6A8ACDC22B0A44B900EF2825 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		6A8ACDBC2B0A44B900EF2825 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6A8ACDBB2B0A44B900EF2825 /* ColorPicker.app */,
+				6A8ACDBB2B0A44B900EF2825 /* ColorizedApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6A8ACDBA2B0A44B900EF2825 /* ColorPicker */ = {
+		6A8ACDBA2B0A44B900EF2825 /* ColorizedApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A8ACDCF2B0A44BA00EF2825 /* Build configuration list for PBXNativeTarget "ColorPicker" */;
+			buildConfigurationList = 6A8ACDCF2B0A44BA00EF2825 /* Build configuration list for PBXNativeTarget "ColorizedApp" */;
 			buildPhases = (
 				6A8ACDB72B0A44B900EF2825 /* Sources */,
 				6A8ACDB82B0A44B900EF2825 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = ColorPicker;
+			name = ColorizedApp;
 			productName = ColorPicker;
-			productReference = 6A8ACDBB2B0A44B900EF2825 /* ColorPicker.app */;
+			productReference = 6A8ACDBB2B0A44B900EF2825 /* ColorizedApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6A8ACDB62B0A44B900EF2825 /* Build configuration list for PBXProject "ColorPicker" */;
+			buildConfigurationList = 6A8ACDB62B0A44B900EF2825 /* Build configuration list for PBXProject "ColorizedApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6A8ACDBA2B0A44B900EF2825 /* ColorPicker */,
+				6A8ACDBA2B0A44B900EF2825 /* ColorizedApp */,
 			);
 		};
 /* End PBXProject section */
@@ -348,7 +348,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6A8ACDB62B0A44B900EF2825 /* Build configuration list for PBXProject "ColorPicker" */ = {
+		6A8ACDB62B0A44B900EF2825 /* Build configuration list for PBXProject "ColorizedApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A8ACDCD2B0A44BA00EF2825 /* Debug */,
@@ -357,7 +357,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A8ACDCF2B0A44BA00EF2825 /* Build configuration list for PBXNativeTarget "ColorPicker" */ = {
+		6A8ACDCF2B0A44BA00EF2825 /* Build configuration list for PBXNativeTarget "ColorizedApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A8ACDD02B0A44BA00EF2825 /* Debug */,
