@@ -19,6 +19,8 @@ final class SettingsViewController: UIViewController {
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
     
+    weak var delegate: SettingsViewControllerDelegate?
+    
     var viewColor: UIColor!
     
     override func viewDidLoad() {
@@ -32,10 +34,9 @@ final class SettingsViewController: UIViewController {
         redValueLabel.text = string(from: redSlider)
         greenValueLabel.text = string(from: greenSlider)
         blueValueLabel.text = string(from: blueSlider)
-        
-        //changeViewBackgroundColor()
     }
     
+    // MARK: - IB Actions
     @IBAction func sliderAction(_ sender: UISlider) {
         changeViewBackgroundColor()
         
@@ -49,6 +50,19 @@ final class SettingsViewController: UIViewController {
         }
     }
     
+    @IBAction func doneButtonPressed() {
+        delegate?.setColor(
+            colorPanelView.backgroundColor ?? UIColor(
+                red: 1,
+                green: 1,
+                blue: 1,
+                alpha: 1
+            )
+        )
+        dismiss(animated: true)
+    }
+    
+    // MARK: - Private Methods
     private func changeViewBackgroundColor() {
         colorPanelView.backgroundColor = UIColor(
             red: redSlider.value.cgFloat(),

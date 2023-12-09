@@ -133,13 +133,23 @@
                                     <constraint firstItem="QZl-vw-ZXa" firstAttribute="height" secondItem="w5M-Vw-Owi" secondAttribute="height" id="rQE-lO-mjr"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sL-SA-iSB">
+                                <rect key="frame" x="128" y="428.5" width="64.5" height="34.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Done"/>
+                                <connections>
+                                    <action selector="doneButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="0UE-5b-CdE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dBd-lJ-7ZP" secondAttribute="trailing" constant="16" id="5e1-zT-RP9"/>
+                            <constraint firstItem="7sL-SA-iSB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P5i-ox-gM4"/>
                             <constraint firstItem="dBd-lJ-7ZP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Rfd-Rp-FWb"/>
                             <constraint firstItem="RSK-kI-9bQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SvT-aW-74C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7sL-SA-iSB" secondAttribute="bottom" constant="105" id="dmy-28-7yW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RSK-kI-9bQ" secondAttribute="trailing" constant="16" id="kKx-Xn-dSg"/>
                             <constraint firstItem="RSK-kI-9bQ" firstAttribute="top" secondItem="dBd-lJ-7ZP" secondAttribute="bottom" constant="16" id="nVx-he-QsM"/>
                             <constraint firstItem="dBd-lJ-7ZP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="pCT-Bd-yWe"/>
