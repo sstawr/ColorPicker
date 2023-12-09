@@ -143,7 +143,7 @@ extension SettingsViewController: UITextFieldDelegate {
             showAlert(
                 withTItle: "Wrong data!",
                 andMessage: "Please, enter correct data") {
-                    textField.text = ""
+                    textField.text = "0.50"
                 }
             return
         }
