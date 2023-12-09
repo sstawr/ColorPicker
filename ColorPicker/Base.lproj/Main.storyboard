@@ -101,30 +101,53 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="w5M-Vw-Owi">
-                                        <rect key="frame" x="123" y="0.0" width="165" height="122"/>
+                                        <rect key="frame" x="123" y="0.0" width="106" height="122"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TcG-Z0-OcR">
-                                                <rect key="frame" x="-2" y="0.0" width="169" height="31"/>
+                                                <rect key="frame" x="-2" y="0.0" width="110" height="31"/>
                                                 <color key="tintColor" systemColor="systemRedColor"/>
                                                 <connections>
                                                     <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ApB-yB-M4b"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Stg-7u-s2z">
-                                                <rect key="frame" x="-2" y="46" width="169" height="31"/>
+                                                <rect key="frame" x="-2" y="46" width="110" height="31"/>
                                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                                 <connections>
                                                     <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="OPY-TW-61L"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="nEk-8v-eAJ">
-                                                <rect key="frame" x="-2" y="92" width="169" height="31"/>
+                                                <rect key="frame" x="-2" y="92" width="110" height="31"/>
                                                 <color key="tintColor" systemColor="systemBlueColor"/>
                                                 <connections>
                                                     <action selector="sliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="5An-ce-hqb"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hWA-Gf-Upy">
+                                        <rect key="frame" x="238" y="0.0" width="50" height="118"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bLi-uQ-5jd">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eC7-wp-FIG">
+                                                <rect key="frame" x="0.0" y="42" width="50" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bUu-j0-6bc">
+                                                <rect key="frame" x="0.0" y="84" width="50" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="bEJ-8J-ifZ"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -157,11 +180,14 @@
                     </view>
                     <connections>
                         <outlet property="blueSlider" destination="nEk-8v-eAJ" id="owm-FL-CgU"/>
+                        <outlet property="blueTF" destination="bUu-j0-6bc" id="TmT-3Y-Nyv"/>
                         <outlet property="blueValueLabel" destination="7aI-rs-ymu" id="QGU-X9-72r"/>
                         <outlet property="colorPanelView" destination="dBd-lJ-7ZP" id="wDt-dV-r5e"/>
                         <outlet property="greenSlider" destination="Stg-7u-s2z" id="Lvm-5E-cSh"/>
+                        <outlet property="greenTF" destination="eC7-wp-FIG" id="B3r-ut-x8A"/>
                         <outlet property="greenValueLabel" destination="Fhh-3i-Ewx" id="QcL-W2-CWc"/>
                         <outlet property="redSlider" destination="TcG-Z0-OcR" id="86m-Zu-l2y"/>
+                        <outlet property="redTF" destination="bLi-uQ-5jd" id="FXF-pL-jZQ"/>
                         <outlet property="redValueLabel" destination="DxX-Pi-yd2" id="dPm-Fq-0Wh"/>
                     </connections>
                 </viewController>
